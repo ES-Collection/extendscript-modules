@@ -1,4 +1,4 @@
-#include '../array.from.js'
+#include '../from.js'
 #include '../../json/json.js'
 
 var x = Array.from('foo');

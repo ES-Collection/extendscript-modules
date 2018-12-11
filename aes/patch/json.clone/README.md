@@ -1,5 +1,7 @@
 # json.clone
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.json.clone.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.json.clone)
+
 > Extension
 
 Adds the `clone()` method to JSON
@@ -8,6 +10,10 @@ Adds the `clone()` method to JSON
 ## Install
 
     npm install @extendscript/aes.patch.json.clone
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.json.clone/clone.js'
 
 ## Test
 

@@ -1,5 +1,7 @@
 # object.isfrozen
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.object.isfrozen.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.object.isfrozen)
+
 > ES5 Sham
 
 The Object.isFrozen() determines if an object is frozen.
@@ -9,6 +11,10 @@ Source: [ps-scripting-es5shim](https://github.com/EugenTepin/ps-scripting-es5shi
 ## Install
 
     npm install @extendscript/aes.patch.object.isfrozen
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.object.isfrozen/isfrozen.js'
 
 ## Test
 

@@ -1,5 +1,7 @@
 # bundle.object
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.bundle.object.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.bundle.object)
+
 > Bundle
 
 A collection of `Object` polyfills for Exendscript.
@@ -8,6 +10,10 @@ A collection of `Object` polyfills for Exendscript.
 ## Install
 
     npm install @extendscript/aes.patch.bundle.object
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.bundle.object/object.js'
 
 ## Update Bundle
 

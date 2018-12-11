@@ -1,5 +1,7 @@
 # json.parsestate
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.json.parsestate.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.json.parsestate)
+
 > Extension
 
 The `JSON.parseState()` method is an alternate `JSON.parse()` that uses a state machine instead of eval.
@@ -9,6 +11,10 @@ Source: [JSON-js](https://github.com/douglascrockford/JSON-js/blob/master/json_p
 ## Install
 
     npm install @extendscript/aes.patch.json.parsestate
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.json.parsestate/parsestate.js'
 
 ## Test
 

@@ -1,5 +1,7 @@
 # json
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.json.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.json)
+
 > ES5 Shim
 
 Adds the light-weight, language independent, data interchange format `JSON` to ExtendScript.
@@ -9,6 +11,10 @@ Source: [JSON-js](https://github.com/douglascrockford/JSON-js/blob/master/json2.
 ## Install
 
     npm install @extendscript/aes.patch.json
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.json/json.js'
 
 ## Test
 

@@ -1,5 +1,7 @@
 # console.log
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.console.log.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.console.log)
+
 > Fill
 
 A `console.log()` for ExtendScript.
@@ -9,6 +11,10 @@ Source: [Bruno Herfst](https://gist.github.com/GitBruno/b00528511c1ecd43bc76481c
 ## Install
 
     npm install @extendscript/aes.patch.console.log
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.console.log/log.js'
 
 ## Test
 

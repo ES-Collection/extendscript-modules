@@ -2,15 +2,13 @@
 
 This is a collection of utilities for [InDesign](https://en.wikipedia.org/wiki/Adobe_InDesign).
 
-## Bundles
-A couple of bundles of modules often used together.
-
-  - [ ] [bundle.measurements](bundle.measurements)
-
-## Measurements
-Modules that are related to measurements.
-
-  - [ ] [Ruler](ruler)
+  - [x] [bounds](bounds)  
+  - [ ] [font](font)
+  - [x] [layer](layer)  
+  - [ ] [menuloader](menuloader)
+  - [x] [pageitems](pageitems)  
+  - [x] [pages](pages)  
+  - [x] [rulers](rulers) 
 
 ## More info
 

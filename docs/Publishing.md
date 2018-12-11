@@ -10,7 +10,7 @@ The first step is to add your module to the [API Registry](./API-Registry.md)
 
 ## Stage 2. Write-n-Test
 
-There are multipple ways to write and validate your code. See our [Testing Guide](./Testing.md) for testing guidelines. It is recommended to use our [Boilerplate Module](../boilerplates/module).
+There are multipple ways to write and validate your code. See our [Testing Guide](./Testing.md) for testing guidelines. It is recommended to use our [Boilerplate Module](../boilerplate/module).
 
 ## Stage 3. Check Package
 
@@ -18,6 +18,7 @@ A couple of things to double check:
 
   1. Name of the package reflects the structure of [API Registry](./API-Registry.md) and follows the [Package Naming Conventions](./Package-Naming-Conventions.md)
   2. Version of the package is correct. We use semantic versioning where initial release for public use is `1.0.0` 
+  3. The name of the main entry script is the same as last section of module name. Therefore the main script file for `ind.tools.documentbuilder` is called `documentbuilder.js`
 
 Some things to look out for if you did not use our [Boilerplate Module](../boilerplates/module):
 

@@ -1,5 +1,7 @@
 # json.file
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.json.file.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.json.file)
+
 > Extension
 
 Adds the `openFile()` and `saveFile()` methods to JSON
@@ -7,6 +9,10 @@ Adds the `openFile()` and `saveFile()` methods to JSON
 ## Install
 
     npm install @extendscript/aes.patch.json.file
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.json.file/file.js'
 
 ## Test
 

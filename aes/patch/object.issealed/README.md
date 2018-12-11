@@ -1,5 +1,7 @@
 # object.issealed
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.object.issealed.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.object.issealed)
+
 > ES5 Sham
 
 The `Object.isSealed()` method determines if an object is sealed.
@@ -9,6 +11,10 @@ Source: [ps-scripting-es5shim](https://github.com/EugenTepin/ps-scripting-es5shi
 ## Install
 
     npm install @extendscript/aes.patch.object.issealed
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.object.issealed/issealed.js'
 
 ## Test
 

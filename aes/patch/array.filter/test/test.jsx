@@ -1,4 +1,4 @@
-#include '../array.filter.js'
+#include '../filter.js'
 #include '../../json/json.js'
 
 function isBigEnough(value) {

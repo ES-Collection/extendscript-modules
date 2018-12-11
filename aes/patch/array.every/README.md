@@ -1,5 +1,7 @@
 # array.every
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.array.every.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.array.every)
+
 > ES5 Shim
 
 The `every()` method tests whether all elements in the array pass the test implemented by the provided function.
@@ -9,6 +11,10 @@ Source: [ps-scripting-es5shim](https://github.com/EugenTepin/ps-scripting-es5shi
 ## Install
 
     npm install @extendscript/aes.patch.array.every
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.array.every/every.js'
 
 ## Test
 

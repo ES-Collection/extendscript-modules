@@ -1,13 +1,13 @@
 {
   "name": "@extendscript/aes.patch.bundle.es6",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A collection of polyfills to bring ExtendScript to ES6 standards.",
-  "main": "bundle.es6.js",
+  "main": "es6.js",
   "scripts": {
     "node-env": "curl https://raw.githubusercontent.com/ES-Collection/build-node-venv/master/build-node-venv.sh > ./.bnv.sh && chmod +x ./.bnv.sh && ./.bnv.sh && rm ./.bnv.sh",
     "prepublishOnly": "npm config set scope extendscript",
     "test": "node ./test/test.js",
-    "bundle": "./node_modules/.bin/exsbundlr -i ./bundle.es6.source.js -o ./bundle.es6.js"
+    "bundle": "exsbundlr --missing -i ./bundle.es6.js -o ./es6.js"
   },
   "repository": {
     "type": "git",
@@ -30,11 +30,11 @@
   "devDependencies": {
     "build-node-venv": "^1.0.3",
     "minimist": "^1.2.0",
-    "tap-es": "git+https://github.com/ExtendScript/tap-es.git",
-    "@extendscript/aes.patch.bundle.es5": "^1.0.0",
-    "@extendscript/aes.patch.array.from": "^1.0.0",
-    "@extendscript/aes.patch.object.assign": "^1.0.0",
-    "@extendscript/aes.patch.number.isfinite": "^1.0.0",
-    "extendscript-bundlr": "^0.3.1"
+    "@extendscript/tap-es": ">=1.0.5",
+    "@extendscript/aes.patch.bundle.es5": ">=2.0.2",
+    "@extendscript/aes.patch.array.from": ">=2.0.0",
+    "@extendscript/aes.patch.object.assign": ">=2.0.0",
+    "@extendscript/aes.patch.number.isfinite": ">=2.0.0",
+    "extendscript-bundlr": "^0.4.0"
   }
 }

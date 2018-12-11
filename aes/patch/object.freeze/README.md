@@ -1,5 +1,7 @@
 # object.freeze
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.object.freeze.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.object.freeze)
+
 > ES5 Sham
 
 The `Object.freeze()` method freezes an object: that is, prevents new properties from being added to it; prevents existing properties from being removed; and prevents existing properties, or their enumerability, configurability, or writability, from being changed, it also prevents the prototype from being changed. The method returns the passed object.
@@ -11,6 +13,10 @@ Source: [ps-scripting-es5shim](https://github.com/EugenTepin/ps-scripting-es5shi
 ## Install
 
     npm install @extendscript/aes.patch.object.freeze
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.object.freeze/freeze.js'
 
 ## Test
 

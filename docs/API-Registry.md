@@ -1,9 +1,9 @@
 # API Registry
-To not pollute the global scope, and make it easy for modules to talk to eachother, it is recommended to attach methods to a shared global variable. We keep a registry of properties that might be loaded into the shared API called `Sky`.
+To not pollute the global scope, and make it easy for modules to interconnect, we attach all methods to a shared global variable. We keep a registry of properties that might be loaded into the shared API called `Sky`.
 
-    $.Sky
+    $.global.Sky
 
-The `Sky` object is created by the [`Main Module`](../main). All sub-modules will be loaded under `Sky.module` and `Sky.util`. The main module should therefore be a [peer dependency](https://nodejs.org/en/blog/npm/peer-dependencies/) of any ExtendScript Module.
+The `Sky` object is created by the [`modules.init`](../init) module. All sub-modules will be loaded under `Sky.module` and `Sky.util`. The main module should therefore be a [peer dependency](https://nodejs.org/en/blog/npm/peer-dependencies/) of any ExtendScript Module.
 
   * Properties in _italic_ do not exist but are reserved.
   * Properties in __bold__ are open to sub methods (preferred)
@@ -34,11 +34,14 @@ The `Sky` object is created by the [`Main Module`](../main). All sub-modules wil
       * [patch.function.bind](../aes/patch/function.bind)
     * [__patch.json__](../aes/patch/json)
       * [patch.json.clone](../aes/patch/json.clone)
+      * [patch.json.comparable](../aes/patch/json.comparable)
       * [patch.json.cycle](../aes/patch/json.cycle)
       * [patch.json.equals](../aes/patch/json.equals)
       * [patch.json.file](../aes/patch/json.file)
+      * [patch.json.instantiate](../aes/patch/json.instantiate)
       * [patch.json.parserecurse](../aes/patch/json.parserecurse)
       * [patch.json.parsestate](../aes/patch/json.parsestate)
+      * [patch.json.validate](../aes/patch/json.validate)
     * __patch.number__
       * [patch.number.isfinite](../aes/patch/number.isfinite)
     * __patch.object__
@@ -61,41 +64,47 @@ The `Sky` object is created by the [`Main Module`](../main). All sub-modules wil
       * [patch.string.trim](../aes/patch/string.trim)
   * __module__
   * __util__
+      * [__util__.jaw](../aes/util/jaw)
       * [__util.schema__](../aes/util/schema)
         * [util.schema.document](../aes/util/schema/document)
 
 ## Script UI (sui)
   * __module__
+    * [module.jaxon](../sui/module/jaxon)
   * __util__
+    * [module.groupList](../sui/module/grouplist)
 
 ## InDesign (ind)
   * __module__
     * [module.docbuilder](https://github.com/CoverBuilder/General-Document-Builder)
-    * [module.slugs](https://github.com/CoverBuilder/Slug-Tools)
+    * [module.jaxon](../ind/module/jaxon)
+    * [module.outerspace](../ind/module/outerspace)
   * __util__
-     * [__util.cStyle__](../ind/util/cStyle)
-      * [util.cStyle.create](../ind/util/cStyle/create)
-      * [util.cStyle.get](../ind/util/cStyle/get)
-    * [__util.layer__](../ind/util/layer)
-      * [util.layer.locked](../ind/util/layer.locked)
-      * [util.layer.getSelect](../ind/util/layer.getSelect)
+    * [util.bounds](../ind/util/bounds)
+    * [util.font](../ind/util/font)  
+    * [util.layer](../ind/util/layer)
     * [util.menuloader](../ind/util/menuloader)
-    * [__util.cStyle__](../ind/util/pStyle)
-      * [util.oStyle.create](../ind/util/oStyle/create)
-      * [util.oStyle.get](../ind/util/oStyle/get)
-    * [__util.page__](../ind/util/page)
-      * [util.page.getInfo](../ind/util/page/getInfo)
-    * [__util.pStyle__](../ind/util/pStyle)
-      * [util.pStyle.create](../ind/util/pStyle/create)
-      * [util.pStyle.get](../ind/util/pStyle/get)
-    * [__util.ruler__](../ind/util/ruler)
-      * [util.ruler.set](../ind/util/ruler/set)
-    * [__util.textFrame__](../ind/util/create)
-      * [util.textFrame.create](../ind/util/textFrame/create)
+    * [util.objectstyle](../ind/util/objectstyle)
+    * [util.pageitems](../ind/util/pageitems) 
+    * [util.pages](../ind/util/pages)
+    * [util.rulers](../ind/util/rulers)
+    * [util.styles](../ind/util/styles)    
 
 ## Photoshop (ps)
   * __module__
     * [_module.docbuilder_](https://github.com/GitBruno/General-Document-Builder)
+    * [module.jam](../ps/module/jam)
+      * [jam.actions](../ps/module/jam/jam.actions)
+      * [jam.books](../ps/module/jam/jam.books)
+      * [jam.colors](../ps/module/jam/jam.colors)
+      * [jam.engine](../ps/module/jam/jam.engine)
+      * [jam.helpers](../ps/module/jam/jam.helpers)
+      * [jam.json](../ps/module/jam/jam.json)
+      * [jam.layers](../ps/module/jam/jam.layers)
+      * [jam.shapes](../ps/module/jam/jam.shapes)
+      * [jam.styles](../ps/module/jam/jam.styles)
+      * [jam.text](../ps/module/jam/jam.text)
+      * [jam.utils](../ps/module/jam/jam.utils)
   * __util__
 
 ## Illustrator (ai)

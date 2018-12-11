@@ -1,5 +1,7 @@
 # object.getprototypeof
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.object.getprototypeof.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.object.getprototypeof)
+
 > ES5 Sham
 
 The `Object.getPrototypeOf()` method returns the prototype (i.e. the value of the internal `Prototype` property) of the specified object.
@@ -9,6 +11,10 @@ Source: [ps-scripting-es5shim](https://github.com/EugenTepin/ps-scripting-es5shi
 ## Install
 
     npm install @extendscript/aes.patch.object.getprototypeof
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.object.getprototypeof/getprototypeof.js'
 
 ## Test
 

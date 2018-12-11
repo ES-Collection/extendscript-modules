@@ -1,5 +1,7 @@
 # bundle.array
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.bundle.array.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.bundle.array)
+
 > Bundle
 
 A collection of `Array` polyfills for Exendscript.
@@ -8,6 +10,10 @@ A collection of `Array` polyfills for Exendscript.
 ## Install
 
     npm install @extendscript/aes.patch.bundle.array
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.bundle.array/array.js'
 
 ## Update Bundle
 

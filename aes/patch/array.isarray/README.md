@@ -1,5 +1,7 @@
 # array.isarray
 
+[![version](https://img.shields.io/npm/v/@extendscript/aes.patch.array.isarray.svg)](https://www.npmjs.org/package/@extendscript/aes.patch.array.isarray)
+
 > ES5 Shim
 
 The `isArray()` method determines whether the passed value is an Array.
@@ -9,6 +11,10 @@ Source: [ps-scripting-es5shim](https://github.com/EugenTepin/ps-scripting-es5shi
 ## Install
 
     npm install @extendscript/aes.patch.array.isarray
+
+## Include
+
+    #include 'node_modules/@extendscript/aes.patch.array.isarray/isarray.js'
 
 ## Test
 

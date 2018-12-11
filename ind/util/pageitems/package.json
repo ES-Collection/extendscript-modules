@@ -1,0 +1,40 @@
+{
+  "name": "@extendscript/ind.util.pageitems",
+  "version": "2.0.1",
+  "description": "Utilities that create or target page items in InDesign.",
+  "main": "pageitems.js",
+  "scripts": {
+    "buildEnv": "curl https://raw.githubusercontent.com/ES-Collection/build-node-venv/master/build-node-venv.sh > ./.bnv.sh && chmod +x ./.bnv.sh && ./.bnv.sh && rm ./.bnv.sh",
+    "prepublishOnly": "npm config set scope extendscript",
+    "test": "node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExtendScript/extendscript-modules.git"
+  },
+  "keywords": [
+    "extendscript",
+    "extendscript-modules",
+    "indesign",
+    "pageitems"
+  ],
+  "author": "extendscript.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ExtendScript/extendscript-modules/issues"
+  },
+  "homepage": "https://github.com/ExtendScript/extendscript-modules#readme",
+  "devDependencies": {
+    "@extendscript/tap-es": ">=1.0.5",
+    "@extendscript/modules.init": ">=2.2.0",
+    "@extendscript/aes.patch.bundle.array": ">=2.0.1",
+    "@extendscript/ind.util.pages": ">=1.0.3",
+    "@extendscript/ind.util.rulers": ">=4.0.0",
+    "@extendscript/ind.util.bounds": ">=1.1.0"
+  },
+  "peerDependencies": {
+    "@extendscript/modules.init": ">=2.2.0",
+    "@extendscript/aes.patch.bundle.array": ">=2.0.1",
+    "@extendscript/ind.util.pages": ">=1.0.0"
+  }
+}
